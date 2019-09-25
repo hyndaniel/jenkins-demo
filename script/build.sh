@@ -1,5 +1,7 @@
 # /bin/bash
 
+cd /opt/devops-demo
+
 tar -cf demo.tar.gz bin conf lib 
 
 docker rmi -f devops-demo:1.0
