@@ -1,9 +1,11 @@
 # /bin/bash
 
-docker rmi -f devops-demo
+tar -cf demo.tar.gz bin conf lib 
+
+docker rmi -f devops-demo:1.0
 
 echo "Start building..."
-docker build -t devops-demo:1.0 .
+docker build -t devops-demo:1.0 /opt/devops-demo
 
 echo "Checking..."
 docker images | grep devops-demo
