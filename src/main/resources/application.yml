@@ -1,0 +1,16 @@
+server:
+  # 服务端口
+  port: 18888
+  tomcat:
+    basedir: /var/tmp/
+    uri-encoding: UTF-8
+
+spring:
+  messages:
+    basename: i18n/messages
+  mvc:
+    # 默认语言
+    locale: en_US
+  application:
+    # 服务名
+    name: ACM-CORE-SERVICE
