@@ -4,7 +4,7 @@ WORKDIR /opt/
 
 RUN mkdir /opt/devops-demo
 
-ADD demo.tar.gz /opt/uop
+ADD demo.tar.gz /opt/devops-demo
 
 WORKDIR /opt/devops-demo/bin
 

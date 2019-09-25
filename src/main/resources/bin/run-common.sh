@@ -47,7 +47,7 @@ start_service(){
 
   echo "Starting the service ..."
 
-  nohup java ${JAVA_OPTS} -Ddruid.logType=slf4j -classpath ${CONF_DIR}:${LIB_JARS} ${MAIN_CLASS} >/dev/null 2>&1 &
+  java ${JAVA_OPTS} -Ddruid.logType=slf4j -classpath ${CONF_DIR}:${LIB_JARS} ${MAIN_CLASS} 
 
   echo "OK!"
   PIDS=`ps  --no-heading -C java -f --width 1000 | grep "$DEPLOY_DIR" | awk '{print $2}'`
