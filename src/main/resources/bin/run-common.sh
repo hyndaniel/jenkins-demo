@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 RUN_OPE=$1
 MAIN_CLASS="cn.percent.overseas.App"
