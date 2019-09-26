@@ -13,4 +13,4 @@ echo "Checking..."
 docker images | grep devops-demo
 
 echo "Running..."
-docker run -d devops-demo:1.0
+docker run -d -p 18888:18888 devops-demo:1.0
