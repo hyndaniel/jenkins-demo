@@ -1,7 +1,7 @@
 #!/bin/sh
 
 RUN_OPE=$1
-MAIN_CLASS="com.glriverside.fkj.message.be.Application"
+MAIN_CLASS="cn.percent.overseas.App"
 
 FILE_NAME=`basename $0`
 cd `dirname $0`
